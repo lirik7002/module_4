@@ -27,12 +27,6 @@ class Migration(migrations.Migration):
         ),
     
     ]
-class NewNameTable(migrations.Migration):
-    dependencies =[
-    ]
-    operations = [
-        migrations.RenameModel('lesson4_advertisement','advertisements')
-    ]
-def __str__(self):
-    return (self.id,self.title,self.prise)
+
+
 
