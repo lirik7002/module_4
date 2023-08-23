@@ -27,3 +27,5 @@ class AdvertisementAdmin(admin.ModelAdmin):
     def make_auction_as_true(self,request,queryset):
         queryset.update(auction=True)
 admin.site.register(Advertisement, AdvertisementAdmin)
+fields = ( 'image_tag', )
+readonly_fields = ('image_tag',)
